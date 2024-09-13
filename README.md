@@ -29,7 +29,7 @@ CurrencyConverterApi/
 |
 ├── appsettings.json                     # Configuration file
 ├── Program.cs                           # Application entry point and DI setup
-
+|
 CurrencyConverterApiTests/
 |
 ├── ExchangeRateServiceTests.cs         # Unit tests for the service
@@ -39,6 +39,9 @@ CurrencyConverterApiTests/
 * Step 1: Clone the Repository
 ```
 git clone https://github.com/bhavik-dharaiya/CurrencyConverterAPI.git
+```
+
+```
 cd CurrencyConverterApi
 ```
 
@@ -49,7 +52,7 @@ dotnet restore
 
 * Step 3: Click on the CurrencyConverterApi.sln
 ```
-Build the application and run
+build the application and run
 ```
 
 ### Configuration
