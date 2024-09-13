@@ -1,0 +1,131 @@
+Folder PATH listing
+Volume serial number is 1857-A088
+C:.
+|   CurrencyConverterApi.sln
+|   directory_structure.txt
+|   
++---CurrencyConverterApi
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   CurrencyConverterApi.csproj
+|   |   CurrencyConverterApi.csproj.user
+|   |   CurrencyConverterApi.http
+|   |   Program.cs
+|   |   
+|   +---bin
+|   |   \---Debug
+|   |       \---net8.0
+|   |               appsettings.Development.json
+|   |               appsettings.json
+|   |               CurrencyConverterApi.deps.json
+|   |               CurrencyConverterApi.dll
+|   |               CurrencyConverterApi.exe
+|   |               CurrencyConverterApi.pdb
+|   |               CurrencyConverterApi.runtimeconfig.json
+|   |               Microsoft.Extensions.Http.Polly.dll
+|   |               Microsoft.OpenApi.dll
+|   |               Polly.Core.dll
+|   |               Polly.dll
+|   |               Polly.Extensions.Http.dll
+|   |               Swashbuckle.AspNetCore.Swagger.dll
+|   |               Swashbuckle.AspNetCore.SwaggerGen.dll
+|   |               Swashbuckle.AspNetCore.SwaggerUI.dll
+|   |               
+|   +---Controllers
+|   |       ExchangeRateController.cs
+|   |       
+|   +---IService
+|   |       IExchangeRateService.cs
+|   |       
+|   +---obj
+|   |   |   CurrencyConverterApi.csproj.nuget.dgspec.json
+|   |   |   CurrencyConverterApi.csproj.nuget.g.props
+|   |   |   CurrencyConverterApi.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |   
+|   |   \---Debug
+|   |       \---net8.0
+|   |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |           |   apphost.exe
+|   |           |   Currency.C35AC2C1.Up2Date
+|   |           |   CurrencyConverterApi.AssemblyInfo.cs
+|   |           |   CurrencyConverterApi.AssemblyInfoInputs.cache
+|   |           |   CurrencyConverterApi.assets.cache
+|   |           |   CurrencyConverterApi.csproj.AssemblyReference.cache
+|   |           |   CurrencyConverterApi.csproj.BuildWithSkipAnalyzers
+|   |           |   CurrencyConverterApi.csproj.CoreCompileInputs.cache
+|   |           |   CurrencyConverterApi.csproj.FileListAbsolute.txt
+|   |           |   CurrencyConverterApi.dll
+|   |           |   CurrencyConverterApi.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   CurrencyConverterApi.genruntimeconfig.cache
+|   |           |   CurrencyConverterApi.GlobalUsings.g.cs
+|   |           |   CurrencyConverterApi.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   CurrencyConverterApi.MvcApplicationPartsAssemblyInfo.cs
+|   |           |   CurrencyConverterApi.pdb
+|   |           |   staticwebassets.build.json
+|   |           |   
+|   |           +---ref
+|   |           |       CurrencyConverterApi.dll
+|   |           |       
+|   |           +---refint
+|   |           |       CurrencyConverterApi.dll
+|   |           |       
+|   |           \---staticwebassets
+|   |                   msbuild.build.CurrencyConverterApi.props
+|   |                   msbuild.buildMultiTargeting.CurrencyConverterApi.props
+|   |                   msbuild.buildTransitive.CurrencyConverterApi.props
+|   |                   
+|   +---Properties
+|   |       launchSettings.json
+|   |       
+|   \---Service
+|           ExchangeRateService.cs
+|           
+\---CurrencyConverterApiTests
+    |   CurrencyConverterApiTests.csproj
+    |   ExchangeRateServiceTest.cs
+    |   MockHttpMessageHandler.cs
+    |   
+    +---bin
+    |   \---Debug
+    |       \---net8.0
+    |           |   CoverletSourceRootsMapping_CurrencyConverterApiTests
+    |           |   
+    |           +---cs
+    |           +---de
+    |           +---es
+    |           +---fr
+    |           +---it
+    |           +---ja
+    |           +---ko
+    |           +---pl
+    |           +---pt-BR
+    |           +---refs
+    |           +---ru
+    |           +---tr
+    |           +---zh-Hans
+    |           \---zh-Hant
+    \---obj
+        |   CurrencyConverterApiTests.csproj.nuget.dgspec.json
+        |   CurrencyConverterApiTests.csproj.nuget.g.props
+        |   CurrencyConverterApiTests.csproj.nuget.g.targets
+        |   project.assets.json
+        |   project.nuget.cache
+        |   
+        \---Debug
+            \---net8.0
+                |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+                |   CurrencyConverterApiTests.AssemblyInfo.cs
+                |   CurrencyConverterApiTests.AssemblyInfoInputs.cache
+                |   CurrencyConverterApiTests.assets.cache
+                |   CurrencyConverterApiTests.csproj.AssemblyReference.cache
+                |   CurrencyConverterApiTests.csproj.BuildWithSkipAnalyzers
+                |   CurrencyConverterApiTests.csproj.CoreCompileInputs.cache
+                |   CurrencyConverterApiTests.csproj.FileListAbsolute.txt
+                |   CurrencyConverterApiTests.GeneratedMSBuildEditorConfig.editorconfig
+                |   CurrencyConverterApiTests.GlobalUsings.g.cs
+                |   MvcTestingAppManifest.json
+                |   
+                +---ref
+                \---refint
