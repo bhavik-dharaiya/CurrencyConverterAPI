@@ -32,7 +32,7 @@ CurrencyConverterApi/
 |
 CurrencyConverterApiTests/
 |
-├── ExchangeRateServiceTests.cs         # Unit tests for the service
+├── ExchangeRateServiceTests.cs          # Unit tests for the service
 ```
 
 ### Setup and Installation
