@@ -32,43 +32,65 @@ CurrencyConverterApi/
 
 CurrencyConverterApiTests/
 |
-├── ExchangeRateServiceTests.cs      # Unit tests for the service
+├── ExchangeRateServiceTests.cs         # Unit tests for the service
 ```
 
 ### Setup and Installation
-* How to run the program
 * Step 1: Clone the Repository
 ```
-git clone https://github.com/your-repo/CurrencyConverterApi.git
-git clone https://github.com/bhavik-dharaiya/CurrencyConverterAPI/
+git clone https://github.com/bhavik-dharaiya/CurrencyConverterAPI.git
 cd CurrencyConverterApi
 ```
 
-## Help
-Any advise for common problems or issues.
+* Step 2: Install Dependencies
 ```
-command to run if program contains helper info
+dotnet restore
 ```
+
+* Step 3: Click on the CurrencyConverterApi.sln
+```
+Build the application and run
+```
+
+### Configuration
+* API Configuration: The API uses the Frankfurter API as its data source. The base URL is set in the service class and can be adjusted if needed.
+* Base API URL: Frankfurter API: https://api.frankfurter.app/
+* Retry and Rate Limiting: Polly is used for retrying policies to handle transient errors from the Frankfurter API. Bulkhead Isolation is used to limit the number of concurrent requests to avoid overloading the API.
+
+### API Endpoints
+* Endpoint 1: Retrieve Latest Exchange Rates
+   * Parameters: baseCurrency (query parameter, required) - The base currency code (e.g., EUR).
+* Endpoint 2: Convert Currency
+   * Parameters: amount, from, to - with appropriate validations.
+   * Special Handling: Returns a 400 Bad Request if converting to TRY, PLN, THB, or MXN.
+* Endpoint 3: Retrieve Historical Rates
+   * Parameters: baseCurrency, start, end, pageSize.
+
+### Error Handling and Logging
+* Error Handling: Includes try-catch blocks with appropriate HTTP status codes.
+* Logging: Uses ASP.NET Core's built-in logging framework.
+
+### Testing and Unit Tests
+* Unit tests implemented using Xunit and Moq.
+
+### User Guide
+* Using Swagger UI
+  * Navigate to http://localhost:7140/swagger in your browser.
+  * Test endpoints interactively.
+
+### Consuming the API
+* Use GET requests with appropriate parameters as documented.
+
+### Troubleshooting
+* Common Issues: Check parameter formats and API accessibility.
+* Logs and Debugging: Use console logs for tracing errors.
 
 ## Authors
-Contributors names and contact info
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+* Bhavesh Dharaiya
 
 ## Version History
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
-## License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## Acknowledgments
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
